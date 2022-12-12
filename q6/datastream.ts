@@ -12,9 +12,7 @@ function findIndex(input: string) {
   for (let i = 0; i < input.length - 4; i++) {
     const last4 = input.slice(i, i + 4);
     const unique = new Set(last4);
-    console.log(input[0], input[1791], input[1792], input[1793], input[1794])
     if (unique.size === 4) {
-      console.log(unique)
       // I love off by one errors :D here lies my hopes and dreams
       return i + 4;
     }
